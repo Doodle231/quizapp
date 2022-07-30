@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,300;1,600&display=swap');
 body { 
     overflow-x: hidden;
-    overflow-y: hidden;
+  
     background-color: #65b1dd;
     margin: 0;
 }
 
-.mainpage { 
-    display:none; 
+#mainpage { 
+    display:block; 
 }
 
 
@@ -107,20 +107,23 @@ body {
 }
 
 .lessonpage { 
-    
+    display:none; 
     position: absolute;
-    z-index: 999;
+    z-index: 30;
     height:100%; 
     width:100%; 
-    background: linear-gradient(133.48deg, #99DFEE 25.66%, rgba(89, 202, 121, 0.677083) 69.31%, rgba(220, 255, 4, 0) 103.98%);
+    background: linear-gradient(133.48deg, #48c467 25.66%, rgba(105, 69, 189, 0.677) 69.31%, rgba(220, 255, 4, 0) 103.98%);
     top:0; 
     padding:2rem; 
 }
 
 
 .lessonnumber { 
+    padding-top:2%; 
     font-size: 2rem;
     margin-left: 10%;
+
+    
 }
 
 .lessontitle { 
@@ -129,10 +132,13 @@ body {
 }
 
 .lessonlargetitletext { 
-    font-size: 3rem;
+    
+    font-size: 4rem;
     font-weight: 800;
-    padding-left: 40% ; 
-    padding-bottom:2rem; 
+    left: 50%;
+    top:10%; 
+    position:absolute; 
+    transform: translate(-50%, -50%);
 
 }
 
@@ -142,6 +148,8 @@ body {
     display:flex; 
     width:100%; 
     height:50%; 
+    flex-wrap: wrap; 
+    margin-top:5%; 
 
 }
 
@@ -149,18 +157,26 @@ body {
     margin-left: 10%; 
     width:30%; 
     height:100%; 
-    background-color: yellow;
-    min-width: 200px;
+    min-width: 200px; 
    
     
 }
 
-.worddescription{
+.worddescriptionbox{
     margin-left:10%; 
     width:30%; 
     height:100%; 
     background-color: #F4F5BA;
-   
+    min-width:200px; 
+
+    
+}
+
+.worddescription { 
+    padding-top:10%; 
+    font-size:2rem; 
+    margin-left:5%; 
+    margin-right:5%; 
 }
 
 .navbutton{
@@ -182,34 +198,224 @@ body {
 
 #leftarrow { 
     position:absolute; 
-    margin-top:10%;
+    margin-top:15%;
+    font-size: 1.2rem;
+    left:1%; 
+ 
+  
 }
 
 #rightarrow { 
     position:absolute; 
-    margin-top:10%;
-    right:10%; 
+    margin-top:15%;
+    right:9%; 
+    font-size:1.2rem; 
 }
+
+#leftarrowicon:hover, #rightarrowicon:hover { 
+  background-color: rgb(0, 255, 64);
+   
+}
+
+
 
 .voicebutton{ 
  position: absolute;
-    border-radius: 40px;
- background-color: blue;
+    border-radius: 190px;
+ background-color: rgb(10, 107, 235);
  color:white; 
- height:10%; 
- top:5%; 
- left:55%; 
+ height:20%; 
+ top:-5%; 
+ left:35%; 
+
 }
 
 #leftarrowicon, #rightarrowicon { 
     position:absolute; 
     width:6%; 
     height:20%;
-    margin-top:12%; 
+    margin-top:5%; 
 }
 
 #rightarrowicon { 
-right:8%; 
+right:7%; 
 }
 
 
+#testpage{
+    display:none; 
+    position: absolute;
+    background-color: #F1742E;
+    width:100vw;  
+    height:100vh;
+    top:0; 
+ 
+}
+
+#testpage > h1,h2{
+ margin-left: 10%;
+ color:white; 
+}
+
+
+#reviewword{ 
+
+    margin-left:40%; 
+    font-size: 3rem;
+    color:blue; 
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+#quizbox{
+  width: 50%; 
+  height:60%; 
+  background-color: #5966E2;
+  margin: 0 auto;
+}
+
+.choice{
+    position:relative; 
+    width:80%; 
+    height:20%; 
+    background-color: yellow;
+    padding-top:5px; 
+    border:2px solid black; 
+    margin-top:5px; 
+    margin-left: 10%;
+    top:10px; 
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+    font-size:24px;  
+    text-align: center;
+  
+}
+
+.choice:hover { 
+    background-color: rgb(197, 159, 123);
+    
+}
+
+#teacherimage{
+   width:100%;  
+   height:100vh; 
+}
+    
+#lessonresult { 
+    display:none; 
+}
+
+
+
+
+    
+.completemessagepopup{
+   display:none; 
+    position: absolute;
+    width:100vw; 
+    height:100vh; 
+    background-color: blue;
+    z-index: 999;
+
+  
+}
+
+.messagecontent { 
+   
+    color:rgb(226, 241, 10); 
+    font-size: 4rem;
+    opacity:1; 
+    text-align: center;
+}
+
+.checkmark { 
+    display:none; 
+    width:50px; 
+    height:50px; 
+}
+
+@media (min-width: 260px) and (max-width: 480px) {
+  
+ 
+
+
+    .lessonpage { 
+        padding: 0;
+    }
+   .lessonpicture, .worddescriptionbox { 
+    width:90%;
+    margin-left:20px; 
+    margin-right:0; 
+   }
+
+
+   #leftarrowicon, #rightarrowicon {
+    width:40px; 
+    top:150px; 
+    height:40px; 
+   }
+
+   #rightarrowicon { 
+    top:0%; 
+    right:10%; 
+   }
+
+   #leftarrowicon{
+    left:10%;
+    top:0%; 
+   }
+    
+   .lessonlargetitletext { 
+    margin-top:10%; 
+    font-size: 2.5rem;
+ 
+ 
+   }
+
+   #picturewrapper { 
+    padding-top:20%; 
+   }
+
+   #leftarrow, #rightarrow{ 
+   display:none;  
+   }
+
+   .voicebutton { 
+   
+border-radius: 40px;
+ top:-20%; 
+ left:70%; 
+ width:60px;
+ height:60px; 
+   }
+
+   .prevbttn, .nextbttn {
+    position:absolute; 
+    z-index: 999;
+    width:60px; 
+    top:400px; 
+
+    
+   }
+
+.menubutton { 
+    position: absolute;
+    bottom:-40%;
+    width: 90%; 
+    height:50px; 
+    margin-left:5%; 
+}
+
+.porfoliobutton{ 
+    width:120px; 
+    height:40px; 
+    left:0px; 
+    top:0px; 
+    border-radius: 0;
+   
+}
+
+   .nextbttn { 
+    right:10%; 
+   }
+
+  }

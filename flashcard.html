@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+</head>
+<body>
+ 
+    <div id="mainpage">
+    <div class="topsection">
+    <button class ="porfoliobutton"> Go back to portfolio</button>
+ <h1> Lessons</h1>
+ </div>
+
+ <div class="cardcontainer">
+
+    <div class="card"> 
+<h1>Lesson 1 </h1> <div class="checkbox">
+<img src = "./assets/checkmark.png" class ="checkmark"></div><h2> Family</h2> 
+<img src="./assets/family.jpg"  class ="cardimage"> 
+<button class ="bottombutton" id ="0">Go to lesson</button>
+</div>
+
+<div class="card">
+    <h1>Lesson 2 </h1><div class="checkbox">
+        <img src = "./assets/checkmark.png" class ="checkmark">  </div><h2> Clothes</h2>
+        <img src="./assets/clothes.jpg"  class ="cardimage">
+    <button class ="bottombutton" id ="1">Go to lesson</button>
+</div>
+
+<div class="card"><h1>Lesson 3 </h1><div class="checkbox">
+<img src = "./assets/checkmark.png" class ="checkmark"></div><h2> Places</h2>
+<img src="./assets/places.jpg"  class ="cardimage">
+
+<button class ="bottombutton" id ="2">Go to lesson</button></div>
+
+
+<div class="card"><h1>Lesson 4 </h1><div class="checkbox">
+  <img src = "./assets/checkmark.png" class ="checkmark">  </div><h2> Emotions</h2>
+  <img src="./assets/emotions.jpg"  class ="cardimage">
+  <button class ="bottombutton" id ="3">Go to lesson</button></div>
+</div>
+
+
+</div>
+
+
+<div class="lessonpage">
+<div class="lessonnumber">Lesson 1</div>
+<div class="lessontitle">Empty</div>
+<div class="lessonlargetitletext">Chicken</div>
+<div id="leftarrow"> Previous Word</div>
+<div id="rightarrow">Next Word</div>
+
+<div id="picturewrapper">
+    <button class ="voicebutton">Click to play</button>
+
+<img id ="leftarrowicon" src = "./assets/left-arrow.png"></img>
+<img id ="rightarrowicon" src = "./assets/right-arrow.png"></img>
+    <img class="lessonpicture"></img>
+<div class="worddescriptionbox">
+    <div class="worddescription"></div>
+
+</div>
+</div>
+
+<button class="navbutton prevbttn">Previous Image</button>
+<button class="navbutton nextbttn">Next Image</button>
+<button class ="navbutton menubutton"> Back to main menu</button>
+</div>
+
+
+
+<div class ="completemessagepopup">
+<div class="messagecontent">
+<h1>Chapter Complete! </h1>
+<p>Congratulations on finishing this chapter. Keep up the good work!</p>
+
+</div>
+
+
+</div>
+
+
+
+
+</body>
+<script  type="module" src = "./main.js"></script>
+<link rel="stylesheet" href="./styles.css">
+</html>
