@@ -91,6 +91,9 @@ body {
     color:whitesmoke;
 }
 
+.bottombutton:hover { 
+    background-color: rgb(48, 177, 48);
+}
 
 
 .porfoliobutton{
@@ -106,6 +109,26 @@ body {
 
    
 }
+
+.voicebutton:hover { 
+    background-color: rgb(109, 109, 194);
+}
+
+.navbutton:hover { 
+    background-color:rgb(144, 144, 185); 
+}
+
+.porfoliobutton:hover{
+    background-color: rgb(192, 80, 80);
+
+   
+}
+
+
+
+
+
+
 
 .lessonpage { 
     display:none; 
@@ -397,7 +420,7 @@ border-radius: 40px;
     position:absolute; 
     z-index: 999;
     width:60px; 
-    top:550px; 
+    top:350px; 
 
     
    }
