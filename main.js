@@ -71,7 +71,7 @@ for (let i = 0; i < mainButtons.length; i++) {
 
      if(e.target.id === "3"){
        currentLesson = 3
-       lessonTitle.textContent = "Emotions"
+       lessonTitle.textContent = "Jobs"
        displayLesson = wordsListsArrays[currentLesson]
        updatePage()
      }
@@ -277,7 +277,7 @@ if (currentPage === 5 ){
  if (lessonTitle.textContent === "Places"){
   lesson3complete = true; 
  }
- if (lessonTitle.textContent === "Emotions"){
+ if (lessonTitle.textContent === "Jobs"){
   lesson4complete = true; 
  }
 

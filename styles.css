@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,300;1,600&display=swap');
 body { 
     overflow-x: hidden;
+    overflow-y: hidden;
   
     background-color: #65b1dd;
     margin: 0;
@@ -157,7 +158,7 @@ body {
     margin-left: 10%; 
     width:30%; 
     height:100%; 
-    min-width: 200px; 
+    min-width: 300px; 
    
     
 }
@@ -235,6 +236,7 @@ body {
     width:6%; 
     height:20%;
     margin-top:5%; 
+    bottom:65px; 
 }
 
 #rightarrowicon { 
@@ -333,8 +335,11 @@ right:7%;
     height:50px; 
 }
 
-@media (min-width: 260px) and (max-width: 480px) {
+@media (min-width: 260px) and (max-width: 600px) {
   
+   body { 
+    overflow-y: visible;
+   }
  
 
 
@@ -392,14 +397,14 @@ border-radius: 40px;
     position:absolute; 
     z-index: 999;
     width:60px; 
-    top:400px; 
+    top:550px; 
 
     
    }
 
 .menubutton { 
     position: absolute;
-    bottom:-40%;
+    bottom:-60%;
     width: 90%; 
     height:50px; 
     margin-left:5%; 
@@ -407,15 +412,31 @@ border-radius: 40px;
 
 .porfoliobutton{ 
     width:120px; 
-    height:40px; 
+    height:20px; 
     left:0px; 
     top:0px; 
     border-radius: 0;
+    font-size: 12px;
    
 }
 
    .nextbttn { 
     right:10%; 
    }
+
+.completemessagepopup{
+    display:none; 
+     position: absolute;
+     width:100%; 
+     height:100%; 
+     background-color: blue;
+     z-index: 999;
+ 
+   
+ }
+
+ .messagecontent{
+    font-size: 2rem;
+ }
 
   }
